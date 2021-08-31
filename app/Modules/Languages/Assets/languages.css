@@ -1,0 +1,36 @@
+.lang {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 20px;
+    border: 1px solid transparent;
+}
+
+.lang.active, .lang:hover {
+    border: 1px solid #fff;
+}
+
+.languages {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 40px;
+    justify-content: flex-end;
+}
+
+.lang a {
+    width: 30px;
+    height: 22px;
+    background-size: 30px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.lang_cs a {
+    background-image: url('./images/flag-cz.svg');
+}
+
+.lang_en a {
+    background-image: url('./images/flag-en.svg');
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="{$basePath}/assets/styles.css">
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette NanoApp</title>
+</head>
+
+<body>
+	{include './Parts/header.latte'}
+
+	<div class="all_content_holder">
+		<div class="flashes_wrapper">
+
+			<div class="flashes_inner">
+				<div class="flashes_list">
+					<div n:foreach="$flashes as $flash" n:class="flash_message, $flash->type">{$flash->message}</div>
+				</div>
+				<div class="flashes_close">{_messages.understand}</div>
+			</div>
+
+		</div>
+
+		<div class="content_wrapper">
+			{include content}
+		</div>
+
+	</div>
+
+	<div class="footer_holder">
+		{include './Parts/footer.latte'}
+	</div>
+
+	{block scripts}
+	<script src="{$basePath}/assets/scripts.js"></script>
+	{/block}
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+userNotExists: "Takový uživatel neexistuje"
+undefinedRole: "Chybná role uživatele"
+undefinedStatus: "Chybný status uživatele"
+userDisabled: "Váš účet byl deaktivován"
+invalidPassword: "Neplatné heslo"
+fillUserName: "Vyplňte prosím uživatelské jméno"
+fillPassword: "Vyplňte prosím heslo"
+wrongRole: "Nemáte oprávnění přihlásit se jako %role%"

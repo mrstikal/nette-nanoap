@@ -1,0 +1,8 @@
+{block content}
+
+<h1 class="common_h1" n:block=title>{_messages.homepageLogin}</h1>
+
+<a class="homepage_link" n:href="Admin:login, locale => $locale">{_messages.loginAsAdmin}</a>
+<a class="homepage_link" n:href="User:login, locale => $locale">{_messages.loginAsUser}</a>
+
+{/block}

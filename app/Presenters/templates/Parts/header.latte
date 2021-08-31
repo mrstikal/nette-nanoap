@@ -1,0 +1,24 @@
+<div class="header_wrapper">
+
+    <a class="nanoapp_logo" n:href="Homepage:default, locale => $locale"></a>
+
+    <div class="languages">
+        <div n:class="$locale == 'cs' ? 'lang lang_cs active' : 'lang lang_cs'"><a n:href="this, locale => cs"></a></div>
+        <div n:class="$locale == 'en' ? 'lang lang_en active' : 'lang lang_en'"><a n:href="this, locale => en"></a></div>
+    </div>
+
+</div>
+
+<div class="overlay load_overlay">
+    <div class="ovelay_inner preloader_inner">
+        <div class="preloader_wrap" style="display: block;">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+    </div>
+</div>

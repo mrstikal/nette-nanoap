@@ -1,0 +1,41 @@
+{block content}
+
+<h1 class="common_h1" n:block=title>{_messages.userOverview}</h1>
+
+<div class="user_data_wrapper">
+    <table class="user_data">
+        <tr>
+            <td class="user_data_left">{_messages.yourUserName}:</td>
+            <td class="user_data_right">{$user['user_name']}</td>
+        </tr>
+        <tr>
+            <td class="user_data_left">{_messages.yourId}:</td>
+            <td class="user_data_right">{$user['id']}</td>
+        </tr>
+        <tr>
+            <td class="user_data_left">{_messages.yourRole}:</td>
+            <td class="user_data_right">
+                {if $user['role'] == 'admin'}
+                {_messages.roleAdmin}
+                {else}
+                {_messages.roleUser}
+                {/if}
+            </td>
+        </tr>
+        <tr>
+            <td class="user_data_left">{_messages.yourStatus}:</td>
+            <td class="user_data_right">
+                {if $user['status'] == 'enabled'}
+                {_messages.statusEnabled}
+                {else}
+                {_messages.statusDisabled}
+                {/if}
+            </td>
+        </tr>
+    </table>
+
+    <a class="logout_button" n:href="Homepage:logOut">{_messages.logOut}</a>
+
+</div>
+
+{/block}

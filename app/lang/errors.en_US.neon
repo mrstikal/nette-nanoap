@@ -1,0 +1,8 @@
+userNotExists: "There is no such user"
+undefinedRole: "Wrong user role"
+undefinedStatus: "Wrong user status"
+userDisabled: "User has been disabled"
+invalidPassword: "Invalid password"
+fillUserName: "Please fill in your username"
+fillPassword: "Please fill in the password"
+wrongRole: "You do not have permission to log in as %role%"

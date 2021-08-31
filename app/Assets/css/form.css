@@ -1,0 +1,84 @@
+.plain_input {
+	font-family: 'Roboto', sans-serif;
+	color: #1e3825 !important;
+	padding: 5px 15px;
+	font-size: 16px;
+	border-radius: 500px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	display: inline-block;
+	text-align: center;
+	width: 400px;
+}
+
+.form_icon {
+	background-repeat: no-repeat;
+	background-position: right center;
+	margin-right: 6px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	top: -2px;
+}
+
+.pwd_icon {
+	background-size: auto 20px;
+	background-image: url('../images/password.svg');
+}
+
+.usr_icon {
+	background-size: auto 20px;
+	background-image: url('../images/user.svg');
+}
+
+.form_table {
+    margin: auto;
+}
+
+.form_table th, .form_table tr {
+	vertical-align: middle;
+}
+
+.submit_form, a.logout_button {
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	width: 100%;
+	border-radius: 500px;
+	padding: 10px;
+	font-size: 18px;
+	color: #1e3825;
+	background: #dbece0;
+	transition: all .25s ease-in-out;
+	cursor: pointer;
+	margin-top: 16px;
+}
+
+.submit_form:hover, a.logout_button:hover {
+	background: #16351e;
+	color: #ffffff;
+}
+
+a.logout_button {
+    display: inline-block;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+::placeholder {
+	color: #334e3a;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #334e3a;
+}
+
+::-ms-input-placeholder {
+	color: #334e3a;
+}
+
+ul.error {
+    display: none;
+}

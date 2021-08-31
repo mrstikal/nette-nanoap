@@ -1,0 +1,38 @@
+extensions:
+	translation: Contributte\Translation\DI\TranslationExtension
+	presenterFactory: Librette\Application\PresenterFactory\DI\PresenterFactoryExtension
+
+translation:
+	locales:
+		whitelist: [cs, en]
+		default: cs
+		fallback: [cs]
+	dirs:
+		- %appDir%/lang
+	returnOriginalMessage: true
+	localeResolvers:
+		- Contributte\Translation\LocalesResolvers\Router
+
+application:
+	errorPresenter: Error
+
+session:
+	expiration: 14 days
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+presenterFactory:
+	mapping:
+		'*':
+			- App\Presenters\*Presenter
+			- App\Modules\User\Presenters\*Presenter
+
+services:
+	- App\Router\RouterFactory::createRouter
+	- App\Modules\User\Models\UserState
+	- App\Modules\Database\Models\DatabaseLayer
+	- App\Modules\User\Components\LoginForm
+	- App\Forms\FormFactory
