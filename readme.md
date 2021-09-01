@@ -4,6 +4,7 @@ Nette NanoApp
 Toto je nano aplikace, která vznikla na základě Vašeho zadání.
 
 __Aplikace byla vytvořená s ohledem na možné budoucí rozšíření nebo změny__
+
 Např. databázová vrstva počítá s tím, že by bylo možné nasadit např. některé ORM.
 
 Oproti zadání jsou zde drobné změny:
@@ -59,3 +60,8 @@ janaheslo
 __stana__
 stanaheslo
 (user, enabled)
+
+## Databáze:
+
+Vzhledem k existenci jedné tabulky nebyla instalovaná knihovna pro migrace.
+Dump db najdete ve složce _data/migrations_.
