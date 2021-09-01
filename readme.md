@@ -25,7 +25,7 @@ Ten by byl jinak implementován ve tvaru
 
 ## Živá verze projektu:
 
-[http://localhost/nette-nanoapp/](http://localhost/nette-nanoapp/)
+[https://mrstik.cz/nette-nanoapp//](https://mrstik.cz/nette-nanoapp/)
 
 __Přihlašovací údaje uživatelů a jejich role/stavy__
 
