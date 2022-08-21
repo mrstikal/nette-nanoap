@@ -5,7 +5,7 @@ Toto je nano aplikace, která vznikla na základě externího zadání jako uká
 
 __Aplikace byla vytvořená s ohledem na možné budoucí rozšíření nebo změny__
 
-Např. databázová vrstva počítá s tím, že by bylo možné nasadit např. některé ORM.
+Např. databázová vrstva počítá s tím, že by bylo možné nasadit některé ORM.
 
 ## Živá verze projektu:
 
